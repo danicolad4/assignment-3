@@ -1,0 +1,33 @@
+h1 {
+    font-family: 'Sterion', sans-serif;
+    font-style: italic;
+}
+
+h2 {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  color: #EDE2C4;
+}
+
+p {
+    font-family: "Instrument Sans", sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+}
+
+.banner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}

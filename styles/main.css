@@ -1,0 +1,24 @@
+.banner {
+    position: relative;
+    width: 100%;
+    align-content: center;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.banner button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em 2em;
+    background-color: #111D29;
+    color: #EDE2C4;
+    border-style: solid;
+    border-color: #EDE2C4;
+    border-radius: 2em;
+    font-size: 1em;
+}
