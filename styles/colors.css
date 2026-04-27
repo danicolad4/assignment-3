@@ -1,0 +1,9 @@
+body {
+    background-color: #53687D;
+    background-image: linear-gradient(180deg,#111D29 25%, #293847 67%, #53687D 100%);
+    height: 100%;
+}
+
+h1 {
+   color: white; 
+}
