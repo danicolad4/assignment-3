@@ -23,7 +23,7 @@ button {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: bold;
-    font-size: 1em;
+    font-size: 2vmin;
 }
 
 .banner button {
