@@ -1,16 +1,6 @@
-.container {
-    width: 1200px;
-    display: flex;
-}
 
-@media (max-width: 500px) {
-    .container {
-    width: 100%;
-    flex-direction: column;
-}
-}
 
-/* code above supposed to be implementation for responsiveness but might change things ups */
+/* might need css code to make the webpage responsive */
 
 .banner {
     position: relative;
@@ -24,10 +14,6 @@
 }
 
 button {
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 1em 2em;
     background-color: #111D29;
     color: #EDE2C4;
@@ -38,4 +24,33 @@ button {
     font-optical-sizing: auto;
     font-style: bold;
     font-size: 1em;
+}
+
+.banner button {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 390px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.flex-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-display img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+  .flex-display {
+    flex-direction: column;
+  }
 }
