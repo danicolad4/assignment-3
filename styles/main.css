@@ -1,4 +1,9 @@
-
+@media (max-width: 390px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 
 /* might need css code to make the webpage responsive */
 
@@ -14,6 +19,7 @@
 }
 
 button {
+    margin: auto;
     padding: 1em 2em;
     background-color: #111D29;
     color: #EDE2C4;
@@ -33,13 +39,6 @@ button {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 390px) {
-  .banner {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
 .flex-display {
     display: flex;
     flex-direction: row;
@@ -54,3 +53,14 @@ button {
     flex-direction: column;
   }
 }
+
+figure {
+    text-align: center;
+    align-content: center;
+}
+
+figure > p {
+    font-weight: 900;
+}
+
+
