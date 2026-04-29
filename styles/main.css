@@ -1,3 +1,5 @@
+/* code for responsiveness */
+
 @media (max-width: 390px) {
   .banner {
     width: 100%;
@@ -5,7 +7,24 @@
   }
 }
 
-/* might need css code to make the webpage responsive */
+nav {
+    border-bottom: 5px #EDE2C4;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111D29;
+    list-style-type: none;
+    margin: 2;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+  float: left;
+}
 
 .banner {
     position: relative;
@@ -16,6 +35,24 @@
 .banner img {
     width: 100%;
     display: block;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vmin;
+    margin-bottom: 2;
+}
+
+.banner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vmin;
+    margin: 2;
 }
 
 button {
@@ -48,6 +85,8 @@ button {
     width: 100%;
 }
 
+/* code for responsiveness */
+
 @media (max-width: 600px) {
   .flex-display {
     flex-direction: column;
@@ -63,4 +102,6 @@ figure > p {
     font-weight: 900;
 }
 
-
+figure img {
+    border-radius: 2em;
+}
