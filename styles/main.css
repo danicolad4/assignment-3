@@ -39,11 +39,12 @@ ul li {
 
 .banner h1 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 8vmin;
-    margin-bottom: 2;
+    font-size: 11vmin;
+    margin: auto;
+    padding-bottom: 15%;
 }
 
 .banner p {
@@ -52,7 +53,7 @@ ul li {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3vmin;
-    margin: 2;
+    margin: auto;
 }
 
 button {
@@ -71,7 +72,7 @@ button {
 
 .banner button {
     position: absolute;
-    top: 62%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
