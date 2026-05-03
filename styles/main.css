@@ -77,6 +77,12 @@ button {
     transform: translate(-50%, -50%);
 }
 
+.bento-display {
+    display: grid;
+    grid-template-areas: "first category" "second category" "third category";
+    grid-template-columns:
+}
+
 .flex-display {
     display: flex;
     flex-direction: row;
