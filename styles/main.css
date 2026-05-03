@@ -78,9 +78,12 @@ button {
 }
 
 .bento-display {
-    display: grid;
-    grid-template-areas: "first category" "second category" "third category";
-    grid-template-columns:
+    display: flex;
+    justify-content: center;
+}
+
+.bento-display img {
+    width: 120%;
 }
 
 .flex-display {
@@ -163,4 +166,8 @@ figure img {
     width: 100%;
     display: block;
   }
+}
+
+footer {
+    background-color: #111D29;
 }
