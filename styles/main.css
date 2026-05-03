@@ -106,3 +106,55 @@ figure > p {
 figure img {
     border-radius: 2em;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.review-card {
+    background-color: white;
+    width: 22rem;
+    border-radius: 2em;
+}
+
+.review-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-title img {
+    float: left;
+    margin: 2em 2em 0em 2em;
+}
+
+.review-title h3 {
+    margin: 2.5em 1em 0em 0em;
+    font-size: 150%;
+}
+
+.review-card p {
+    color: black;
+    margin: 2em;
+}
+
+.stars {
+    margin: 2em;
+}
+
+.stars img{
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+/* code for responsiveness */
+
+@media (max-width: 390px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    display: block;
+  }
+}

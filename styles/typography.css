@@ -4,10 +4,16 @@ h1 {
 }
 
 h2 {
-  font-family: "Instrument Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: bold;
-  color: #EDE2C4;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    color: #EDE2C4;
+}
+
+h3 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
 }
 
 p {
