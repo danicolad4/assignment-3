@@ -1,4 +1,5 @@
 /* nagivation bar */
+
 nav {
     border-bottom: 5px #EDE2C4;
 }
@@ -25,8 +26,10 @@ header .container {
 
 header .container img {
     padding-right: 1em;
-    width: 35 px;
+    width: 35px;
 }
+
+/* search bar and personalised icons */
 
 input {
     width: 50%;
@@ -35,11 +38,6 @@ input {
 
 input[type="text"]{
    padding-left:1em;
-}
-
-hr {
-    margin-left: 2em;
-    margin-right: 2em;
 }
 
 .banner {
@@ -232,6 +230,8 @@ footer {
 }
 }
 
+/* product listing page(s) */
+
 .filtering {
     display: flex;
     justify-content: space-between;
@@ -240,4 +240,31 @@ footer {
 .filtering img {
     padding-left: 2em;
     padding-right: 2em;
+}
+
+hr {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.flex-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left figure {
+    float: left;
+}
+
+.flex-left img {
+    width: 17.5rem;
+}
+
+@media (max-width: 600px) {
+  .flex-left {
+    flex-direction: column;
+  }
+  .flex-left img {
+    width: 100%;
+  }
 }
