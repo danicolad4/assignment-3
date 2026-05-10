@@ -259,21 +259,16 @@ hr {
 .flex-left {
     display: flex;
     flex-direction: row;
-}
-
-.flex-left figure {
-    float: left;
+    width: 50%;
 }
 
 .flex-left img {
-    width: 17.5rem;
+    width: 100%;
 }
 
 @media (max-width: 600px) {
   .flex-left {
     flex-direction: column;
-  }
-  .flex-left img {
     width: 100%;
   }
 }
