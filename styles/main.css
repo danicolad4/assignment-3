@@ -1,7 +1,23 @@
+/* website layout adjustments */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 1em;
+}
+
+p {
+    margin: 1.5em;
+}
+
 /* nagivation bar */
 
 nav {
     border-bottom: 5px #EDE2C4;
+    margin: 1em;
 }
 
 ul {
@@ -244,9 +260,7 @@ footer {
 }
 
 hr {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    margin: 3em;
 }
 
 .flex-left {
@@ -295,9 +309,13 @@ hr {
 }
 
 .product-details {
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .product-details > h2 {
     color: white;
+}
+
+.product-details select {
+    margin-left: 2em;
 }
