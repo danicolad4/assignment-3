@@ -45,3 +45,7 @@ td {
     font-style: bold;
     color: white;
 }
+
+.double-content > h2 {
+    color: white;
+}

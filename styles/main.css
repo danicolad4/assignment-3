@@ -395,6 +395,25 @@ table tbody td {
     padding-top: 2em;
 }
 
+.checkout {
+    width: 80%;
+    border: 2px solid #EDE2C4;
+    margin: 2em;
+}
+
+.checkout button {
+    margin-bottom: 2em;
+}
+
+#promo-code {
+    width: 70%;
+    padding: 1em 2em 1em 2em;
+}
+
+.double-content {
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Payment Details Page */
 
