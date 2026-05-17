@@ -117,11 +117,19 @@ button {
 }
 
 .bento-display {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1em;
     justify-content: center;
 }
 
+.bento-display img {
+    width: 100%;
+}
+
+.grid-row-2 {
+    grid-row: 1 / 2;
+}
 
 .flex-display {
     display: flex;
@@ -301,7 +309,6 @@ hr {
 }
 
 .product-showcase img {
-    display: block;
     width: 100%;
     border-radius: 1em;
 }
@@ -345,3 +352,6 @@ hr {
 
 /* Shopping Cart Page */
 
+/* Payment Details Page */
+
+/* Purchase Confirmation Page */
