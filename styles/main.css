@@ -47,12 +47,12 @@ header .container img {
 
 /* search bar and personalised icons */
 
-input {
+.container input {
     width: 50%;
     border-radius: 2em;
 }
 
-input[type="text"]{
+.container input[type="text"]{
    padding-left:1em;
 }
 
@@ -146,6 +146,7 @@ button {
 @media (max-width: 600px) {
   .flex-display {
     flex-direction: column;
+    grid-template-columns: auto auto;
   }
 }
 
@@ -396,9 +397,12 @@ table tbody td {
 }
 
 .checkout {
-    width: 80%;
+    width: 60%;
     border: 2px solid #EDE2C4;
-    margin: 2em;
+    border-radius: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .checkout button {
@@ -406,7 +410,7 @@ table tbody td {
 }
 
 #promo-code {
-    width: 70%;
+    width: 60%;
     padding: 1em 2em 1em 2em;
 }
 
