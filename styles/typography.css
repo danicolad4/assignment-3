@@ -26,3 +26,8 @@ p {
     font-style: italic;
     color: white;
 }
+
+.center-align h2 {
+    font-family: 'Sterion', sans-serif;
+    font-style: italic;
+}

@@ -355,3 +355,14 @@ hr {
 /* Payment Details Page */
 
 /* Purchase Confirmation Page */
+
+.center-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-align img {
+    margin-bottom: 2em;
+}
