@@ -352,6 +352,50 @@ hr {
 
 /* Shopping Cart Page */
 
+table {
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table img {
+    width: 100%;
+    border-radius: 1.5em;
+}
+
+table td {
+    text-align: center;
+}
+
+table td:nth-child(2) {
+    width: 150px;
+    padding: 2em 2em 0 2em;
+}
+
+table td:nth-child(5) input {
+    width: 60px;
+    padding: 1em;
+}
+
+table td:nth-child(5) input[type="number"] {
+    text-align: center;
+}
+
+table thead {
+    border-bottom: 2px solid #EDE2C4;
+}
+
+table thead th {
+    padding-bottom: 2em;
+}
+
+table tbody td {
+    padding-top: 2em;
+}
+
+
 /* Payment Details Page */
 
 /* Purchase Confirmation Page */

@@ -31,3 +31,17 @@ p {
     font-family: 'Sterion', sans-serif;
     font-style: italic;
 }
+
+th {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    color: #EDE2C4;
+}
+
+td {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+    color: white;
+}
