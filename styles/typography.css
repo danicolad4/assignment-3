@@ -6,14 +6,14 @@ h1 {
 h2 {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: bold;
+    font-weight: bold;
     color: #EDE2C4;
 }
 
 h3 {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: bold;
+    font-weight: bold;
 }
 
 p {
@@ -35,14 +35,14 @@ p {
 th {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: bold;
+    font-weight: bold;
     color: #EDE2C4;
 }
 
 td {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
-    font-style: bold;
+    font-weight: bold;
     color: white;
 }
 
@@ -51,5 +51,12 @@ td {
 }
 
 form h3 {
+    color: #EDE2C4;
+}
+
+label {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
     color: #EDE2C4;
 }

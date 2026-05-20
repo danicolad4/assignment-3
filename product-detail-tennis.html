@@ -58,8 +58,8 @@
                 <span><h2>Asics Gel Dedicate 8  Rose Tennis Shoe</h2></span>
                 <h2>$139.95</h2>
                 <span><h2>Size:</h2></span>
-                <select>
-                    <option>Select</option>
+                <select id="selectSize" onchange="showAlert">
+                    <option value="select">Select</option>
                     <option value="5">5</option>
                     <option value="5.5">5.5</option>
                     <option value="6">6</option>
@@ -70,7 +70,7 @@
                 </select>
                 <span><h2>OTY:</h2></span>
                 
-                <button>Add to Cart</button>
+                <button onclick="addToCart('tennisProduct', 139.95)" class="disabled">Add to Cart</button>
             </div>
         </div>
 

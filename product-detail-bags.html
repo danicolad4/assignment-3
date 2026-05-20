@@ -58,13 +58,13 @@
                 <span><h2>Babolat Pure Drive 6 Pack 2025</h2></span>
                 <h2>$299.95</h2>
                 <span><h2>Size:</h2></span>
-                <select>
+                <select id="selectSize" onchange="showAlert">
                     <option>Select</option>
-                    <option>One-size</option>
+                    <option value="One-size">One-size</option>
                 </select>
                 <span><h2>OTY:</h2></span>
                 
-                <button>Add to Cart</button>
+                <button onclick="addToCart('bagProduct', 299.95)" class="disabled">Add to Cart</button>
             </div>
         </div>
 
