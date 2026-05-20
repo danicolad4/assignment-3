@@ -1,4 +1,4 @@
-const cart = {}
+/* const cart = 
 const sizeSelector = document.getElementById('selectSize');
 const selectedSize = showAlert.value;
 
@@ -11,4 +11,15 @@ function selectSize(showAlert) {
 }
 
 function addToCart(productName, productPrice)
+*/
+
+function getSize() {
+    let select = document.getElementById('selectSize');
+
+    if (select.value == 'select') {
+        alert('Pick a size pls');
+    }
+    
+    return select.value;
+}
 
