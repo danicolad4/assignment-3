@@ -6,9 +6,8 @@ function getSize() {
     let select = document.getElementById('selectSize');
 
     if (select.value == 'select') {
-        alert('Pick a size pls');
+        alert('Please select a size');
     }
-    
     return select.value;
 }
 
