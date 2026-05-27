@@ -327,7 +327,7 @@ table td:nth-child(5) input[type="number"] {
 }
 
 table thead {
-    border-bottom: 2px solid #EDE2C4;
+    border-bottom: 1px solid #EDE2C4;
 }
 
 table thead th {
@@ -363,13 +363,41 @@ table tbody td {
 
 /* Payment Details Page */
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 #payment-details {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+}
+
+#payment-details label {
+    display: block;;
+    margin: 2em 2em 1em 2em;
 }
 
 #payment-details input, select {
-    width: 40%;
+    width: 80%;
+    padding: 0.5em;
+    margin: 0 2em 2em 2em;
+    border: 1px solid #EDE2C4;
+}
+
+.two-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-input, .second-input {
+    width: 100%;
 }
 
 /* Purchase Confirmation Page */
