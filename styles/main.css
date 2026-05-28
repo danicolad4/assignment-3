@@ -48,12 +48,17 @@ header .container img {
 /* header elements */
 
 .container input {
-    width: 50%;
+    width: 60%;
     border-radius: 2em;
+    padding: 0.5em;
 }
 
 .container input[type="text"]{
    padding-left:1em;
+}
+
+#lower-navigation img {
+    width: 50px;
 }
 
 .banner {
@@ -420,6 +425,12 @@ html {
     width: 100%;
     flex-direction: column;
   }
+
+    #lower-navigation {
+    display: flex;
+    flex-direction: row;
+    }
+
     .flex-display {
     flex-direction: column;
     width: 100%;
@@ -433,13 +444,14 @@ html {
     }
 
     figure {
-        margin: 1em 0 2em 0;
+    margin: 1em 0 2em 0;
     }
 
     .container {
     flex-direction: column;
     margin-left: 1.7em;
   }
+  
     .footer-contact {
     display: grid;
     grid-template-columns: auto;

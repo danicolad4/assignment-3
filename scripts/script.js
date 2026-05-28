@@ -1,14 +1,17 @@
-/* cart interactivity */
+// cart interactivity
 
 // const products = [
 //     {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
 //     {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
 // ];
+// localStorage.setItem("Product", JSON.stringify(products));
 
 const products = {
     "asics": {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
     "babolat": {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
 };
+
+// changed from array to keys
 
 function saveToCart(key) {
     const cartList = localStorage.getItem("cartList") | []
@@ -18,9 +21,6 @@ function saveToCart(key) {
 }
 
 products.get("asics")
-
-
-localStorage.setItem("Product", JSON.stringify(products));
 
 let cart = [];
 
