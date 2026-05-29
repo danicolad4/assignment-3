@@ -13,15 +13,6 @@ const products = {
 
 // changed from array to keys
 
-function saveToCart(key) {
-    const cartList = localStorage.getItem("cartList") | []
-    localStorage.setItem("cartList", cartList.push(products.get(key)))
-
-    getSize()
-}
-
-products.get("asics")
-
 let cart = [];
 
 function getSize() {
@@ -32,14 +23,22 @@ function getSize() {
     return select.value;
 }
 
-function addToCart(productId) {
-    let product = {id: productId, size: getSize(), quantity: 1 /* placeholder */};
-    if (product.size != 'select') {
-        cart.push(product);
-    }
+function saveToCart(key) {
+    let cartList = localStorage.getItem("cartList") | []
+    localStorage.setItem("cartList", cartList.push(products.get(key)))
 }
 
-/* form validation */
+products.get("asics")
+
+
+//function addToCart(productId) {
+//    let product = {id: productId, size: getSize(), quantity: 1 /* placeholder */};
+//    if (product.size != 'select') {
+//        cart.push(product);
+//    }
+//}
+
+// form validation
 
 function getValidation() {
     let firstName = document.forms["checkout-form"]["fname"].value;
@@ -60,18 +59,14 @@ function getValidation() {
         return false;
     }
 
-    let email = document.forms["checkout-form"]["email"].value;
-    if (email == "") {
+    let getEmail = document.forms["checkout-form"]["email"].value;
+    if (!getEmail.includes("@") || !getEmail.includes(".")) {
         alert("Please enter a valid 'Email'");
         return false;
-    }
-    if (!email.contains("@") || !email.contains(".")) {
-        alert("Please enter a valid 'Email'");
-        return false;
-    }
+    } 
 
-    let address = document.forms["checkout-form"]["address"].value;
-    if (address == "") {
+    let getAddress = document.forms["checkout-form"]["address"].value;
+    if (getAddress == "") {
         alert("Please fill in your 'Address'");
         return false;
     } 
@@ -94,7 +89,7 @@ function getValidation() {
         return false;
     }
 
-    /* need to add date validation */
+    // need to add date validation
 
     let getCvc = document.forms["checkout-form"]["cvc"].value;
     if (getCvc.length != 3) {

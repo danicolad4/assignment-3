@@ -420,7 +420,7 @@ html {
 
 /* Code for Responsiveness */
 
-@media (max-width: 390px) {
+@media (max-width: 600px) {
     .banner {
     width: 100%;
     flex-direction: column;
