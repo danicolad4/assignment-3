@@ -41,68 +41,88 @@
     <h2>Checkout</h2>
     <hr>
 
-    <form action="purchase-confirmation.html" name="checkout-form" id="payment-details">
-
-        <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstName">
-        </div>
-
-        <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastName">
-        </div>
+    <section>
         
-        <div class="form-group">
-            <label for="pnumber">Phone Number</label>
-            <input type="number" id="pnumber" name="pnumber">
+    </section>
+
+    <article class="overall-payment">
+        <div class="checkout">
+            <h2>Order Summary</h2>
+
+            <div class="flex-display" id="">
+                <!--printed item from cart-->
+            </div>
+
+            <hr>
+            <div class="double-content">
+                <span><h2>Total</h2></span>
+                <h2>$369.9</h2>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-        </div>
+        <form action="purchase-confirmation.html" name="checkout-form" id="payment-details">
 
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address">
-        </div>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstName">
+            </div>
 
-        <div class="form-group">
-            <label for="state">State</label>
-            <select name="state" id="state">
-                <option value="select">Select</option>
-                <option value="NSW">NSW</option>
-                <option value="QLD">QLD</option>
-                <option value="SA">SA</option>
-                <option value="TAS">TAS</option>
-                <option value="VIC">VIC</option>
-                <option value="WA">WA</option>
-            </select>
-        </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastName">
+            </div>
+        
+            <div class="form-group" id="span-two">
+                <label for="pnumber">Phone Number</label>
+                <input type="number" id="pnumber" name="pnumber">
+            </div>
 
-        <div class="form-group">
-            <label for="pcode">Postal Code</label>
-            <input type="number" id="pcode" name="postal">
-        </div>
+            <div class="form-group" id="span-two">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
 
-        <div class="form-group">
-            <label for="cnumber">Card Number</label>
-            <input type="number" id="cnumber" name="cnumber">
-        </div>
+            <div class="form-group" id="span-two">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
 
-        <div class="form-group">
-            <label for="exp">EXP</label>
-            <input type="date" id="exp" name="exp">
-        </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="select">Select</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="VIC">VIC</option>
+                    <option value="WA">WA</option>
+                </select>
+            </div>
 
-        <div class="form-group">
-            <label for="cvc">CVC</label>
-            <input type="number" id="cvc" name="cvc">
-        </div>
+            <div class="form-group">
+                <label for="pcode">Postal Code</label>
+                <input type="number" id="pcode" name="postal">
+            </div>
 
-        <button onclick="return getValidation()">Purchase</button>
-    </form>
+            <div class="form-group" id="span-two">
+                <label for="cnumber">Card Number</label>
+                <input type="number" id="cnumber" name="cnumber">
+            </div>
+
+            <div class="form-group">
+                <label for="exp">EXP</label>
+                <input type="date" id="exp" name="exp">
+            </div>
+
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="number" id="cvc" name="cvc">
+            </div>
+
+            <button onclick="return getValidation()">Purchase</button>
+        </form>
+    </article>
 
 <!--Footer at the end of Website-->
     <footer>

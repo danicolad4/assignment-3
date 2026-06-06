@@ -111,6 +111,7 @@ button {
     top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 1em;
 }
 
 .bento-display {
@@ -344,12 +345,11 @@ table tbody td {
 }
 
 .checkout {
-    width: 60%;
+    width: 40%;
     border: 2px solid #EDE2C4;
     border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .checkout button {
@@ -376,33 +376,56 @@ html {
     box-sizing: inherit;
 }
 
-#payment-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2em;
-}
-
-#payment-details label {
-    display: block;;
-    margin: 2em 2em 1em 2em;
-}
-
-#payment-details input, select {
-    width: 80%;
-    padding: 0.5em;
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     margin: 0 2em 2em 2em;
-    border: 1px solid #EDE2C4;
+    padding: 2em;
+    border: 2px solid #EDE2C4;
+    border-radius: 1em;
+    justify-content: center;
+    width: 100%;
 }
 
-/* .two-stack {
+input,
+button,
+select,
+textarea {
+    font: inherit;
+}
+
+form input, select {
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #EDE2C4;
     width: 100%;
+}
+
+.form-group {
+    display: grid;
+    gap: 0.5em;
+}
+
+#span-two {
+    grid-column: 1 / span 2;
+}
+
+form button {
+    justify-self: center;
+    grid-column: 1 / -1;
+    margin-top: 1em;
+}
+
+.overall-payment {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.first-input, .second-input {
-    width: 100%;
+.overall-payment > .checkout {
+    margin: 0 2em 2em 2em;
 }
 
 /* Purchase Confirmation Page */
@@ -424,7 +447,7 @@ html {
     .banner {
     width: 100%;
     flex-direction: column;
-  }
+    }
 
     #lower-navigation {
     display: flex;
@@ -434,11 +457,13 @@ html {
     .flex-display {
     flex-direction: column;
     width: 100%;
-  }
+    }
+
     #grid-responsive {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+    }
+
     #grid-responsive img {
     width: 155px;
     }
@@ -450,7 +475,7 @@ html {
     .container {
     flex-direction: column;
     margin-left: 1.7em;
-  }
+    }
   
     .footer-contact {
     display: grid;
@@ -458,19 +483,35 @@ html {
     gap: 1em;
     padding: 2em;
     justify-content: space-evenly;
-}
+    }
+
     .flex-left {
     flex-direction: column;
     width: 100%;
-  }
+    }
+
     .other-categories {
     flex-direction: column;
-  }
+    } 
+
     .other-categories img {
     max-width: 92%;
-  }
+    }
+
     .product-showcase {
     flex-direction: column;
     width: 100%;
-  }
+    }
+
+    .overall-payment {
+        flex-direction: column;
+    }
+
+    .checkout {
+        width: 80%;
+    }
+
+    form {
+        justify-content: center;
+    }
 }
