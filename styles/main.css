@@ -16,7 +16,6 @@ p {
 /* nagivation bar */
 
 nav {
-    border-bottom: 5px #EDE2C4;
     margin: 1em;
 }
 
@@ -24,7 +23,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #111D29;
+    background-color: var(--primary-color);
     list-style-type: none;
     margin: 2;
     padding: 0;
@@ -67,7 +66,7 @@ header .container img {
 }
 
 .categories-menu > h3 {
-    color: #EDE2C4;
+    color: var(--main-text-color);
 }
 
 /* banner properties */
@@ -106,10 +105,10 @@ header .container img {
 button {
    
     padding: 1em 2em;
-    background-color: #111D29;
-    color: #EDE2C4;
+    background-color: var(--primary-color);
+    color: var(--main-text-color);
     border-style: solid 2px;
-    border-color: #EDE2C4;
+    border-color: var(--main-text-color);
     border-radius: 2em;
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
@@ -176,7 +175,7 @@ figure img {
 }
 
 .review-card {
-    background-color: white;
+    background-color: var(--other-elements-color);
     width: 21rem;
     border-radius: 2em;
 }
@@ -197,7 +196,7 @@ figure img {
 }
 
 .review-card p {
-    color: black;
+    color: var(--body-text-color);
     margin: 2em;
 }
 
@@ -212,7 +211,7 @@ figure img {
 
 .footer {
     padding: 1em;
-    background-color: #111D29;
+    background-color: var(--primary-color);
 }
 
 .footer-contact {
@@ -300,7 +299,7 @@ hr {
 }
 
 .product-details > h2 {
-    color: white;
+    color: var(--other-elements-color);
 }
 
 .product-details select {
@@ -357,7 +356,7 @@ table td:nth-child(5) input[type="number"] {
 }
 
 table thead {
-    border-bottom: 1px solid #EDE2C4;
+    border-bottom: 1px solid var(--main-text-color);
 }
 
 table thead th {
@@ -370,7 +369,7 @@ table tbody td {
 
 .checkout {
     width: 70%;
-    border: 2px solid #EDE2C4;
+    border: 2px solid var(--main-text-color);
     border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
@@ -407,7 +406,7 @@ form {
     gap: 1rem;
     margin: 0 2em 2em 2em;
     padding: 2em;
-    border: 2px solid #EDE2C4;
+    border: 2px solid var(--body-text-color);
     border-radius: 1em;
     justify-content: center;
     width: 100%;
@@ -423,7 +422,7 @@ textarea {
 form input, select {
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 0.5em;
-    border: 1px solid #EDE2C4;
+    border: 1px solid var(--main-text-color);
     width: 100%;
 }
 
