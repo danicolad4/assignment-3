@@ -45,8 +45,6 @@ header .container img {
     width: 35px;
 }
 
-/* header elements */
-
 .container input {
     width: 60%;
     border-radius: 2em;
@@ -60,6 +58,19 @@ header .container img {
 #lower-navigation img {
     width: 50px;
 }
+
+.categories-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    background-color: rgb(83, 104, 125, 0.4);
+}
+
+.categories-menu > h3 {
+    color: #EDE2C4;
+}
+
+/* banner properties */
 
 .banner {
     position: relative;
@@ -299,6 +310,10 @@ hr {
     margin-left: 1.3em;
 }
 
+#selectSize {
+    width: 100px;
+}
+
 /* Shopping Cart Page */
 
 table {
@@ -345,7 +360,7 @@ table tbody td {
 }
 
 .checkout {
-    width: 40%;
+    width: 70%;
     border: 2px solid #EDE2C4;
     border-radius: 1em;
     margin-left: auto;
@@ -359,6 +374,7 @@ table tbody td {
 #promo-code {
     width: 60%;
     padding: 1em 2em 1em 2em;
+    border-radius: 1em;
 }
 
 .double-content {
@@ -409,7 +425,7 @@ form input, select {
 
 #span-two {
     grid-column: 1 / span 2;
-}
+} 
 
 form button {
     justify-self: center;
@@ -443,7 +459,7 @@ form button {
 
 /* Code for Responsiveness */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .banner {
     width: 100%;
     flex-direction: column;
@@ -503,15 +519,22 @@ form button {
     width: 100%;
     }
 
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #span-two {
+        grid-column: auto;
+    }
+
     .overall-payment {
         flex-direction: column;
+        flex-shrink: 0;
     }
 
     .checkout {
-        width: 80%;
-    }
-
-    form {
-        justify-content: center;
+        width: 85%;
+        margin: 0;
     }
 }

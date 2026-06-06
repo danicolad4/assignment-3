@@ -54,6 +54,13 @@ form h3 {
     color: #EDE2C4;
 }
 
+input,
+button,
+select,
+textarea {
+    font-family: "Instrument Sans", sans-serif;
+}
+
 label {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
