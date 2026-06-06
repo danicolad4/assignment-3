@@ -469,6 +469,11 @@ form button {
 /* Code for Responsiveness */
 
 @media screen and (max-width: 600px) {
+    .categories-menu {
+    overflow: auto;
+    white-space: nowrap;
+    }
+    
     .banner {
     width: 100%;
     flex-direction: column;
