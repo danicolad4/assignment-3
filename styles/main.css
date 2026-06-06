@@ -104,7 +104,7 @@ header .container img {
 
 
 button {
-    margin: auto;
+   
     padding: 1em 2em;
     background-color: #111D29;
     color: #EDE2C4;
@@ -295,6 +295,8 @@ hr {
 
 .product-details {
     margin-left: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-details > h2 {
@@ -302,12 +304,19 @@ hr {
 }
 
 .product-details select {
-    margin-left: 1.8em;
+    margin: 0 1.8em 1.5em 1.8em;
+    padding: 5px;
+}
+
+.product-details input {
+    width: 100px;
+    margin: 0 1.8em 3em 1.8em;
     padding: 5px;
 }
 
 .product-details button {
-    margin-left: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #selectSize {
