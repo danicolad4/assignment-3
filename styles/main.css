@@ -1,9 +1,10 @@
 /* website layout adjustments */
 
-body {
+body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -288,11 +289,10 @@ hr {
 /* product detail page(s) */
 
 .product-showcase {
-    width: 40%;
+    width: 35%;
 }
 
 .product-showcase img {
-    width: 100%;
     border-radius: 1em;
 }
 
@@ -308,7 +308,6 @@ hr {
 }
 
 .product-details {
-    margin-left: 1em;
     display: flex;
     flex-direction: column;
 }
@@ -498,67 +497,69 @@ form button {
 
 @media screen and (max-width: 600px) {
     .categories-menu {
-    overflow: auto;
-    white-space: nowrap;
+        overflow: auto;
+        white-space: nowrap;
     }
     
     .banner {
-    width: 100%;
-    flex-direction: column;
+        width: 100%;
+        flex-direction: column;
     }
 
     #lower-navigation {
-    display: flex;
-    flex-direction: row;
+        display: flex;
+        flex-direction: row;
     }
 
     .flex-display {
-    flex-direction: column;
-    width: 100%;
+        flex-direction: column;
+        width: 100%;
     }
 
     #grid-responsive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #grid-responsive img {
-    width: 155px;
+        width: 155px;
     }
 
     figure {
-    margin: 1em 0 2em 0;
+        margin: 1em 0 2em 0;
     }
 
     .container {
-    flex-direction: column;
-    margin-left: 1.7em;
+        flex-direction: column;
+        margin-left: 1.7em;
     }
   
     .footer-contact {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1em;
-    padding: 2em;
-    justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1em;
+        padding: 2em;
+        justify-content: space-evenly;
     }
 
     .flex-left {
-    flex-direction: column;
-    width: 100%;
+        flex-direction: column;
+        width: 100%;
     }
 
     .other-categories {
-    flex-direction: column;
+        flex-direction: column;
     } 
 
     .other-categories img {
-    max-width: 92%;
+        max-width: 92%;
     }
 
     .product-showcase {
-    flex-direction: column;
-    width: 100%;
+        flex-direction: column;
+        display: block;
+        width: 100%;
+        padding: 0 1.5em 1.5em 1.5em;
     }
 
     form {
