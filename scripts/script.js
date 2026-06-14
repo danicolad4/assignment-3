@@ -41,7 +41,7 @@ function getQuan() {
 }
 
 function addToCart(productId) {
-    let product = {id: productId, size: getSize(), quantity: 1};
+    let product = {id: productId, size: getSize(), quantity: getQuan()};
     if (product.size != 'select') {
         cart.push(product);
     }
