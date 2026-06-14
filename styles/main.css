@@ -69,6 +69,19 @@ header .container img {
     color: var(--main-text-color);
 }
 
+.categories-menu a {
+    color: var(--main-text-color);
+}
+
+.categories-menu a:link {
+    text-decoration: none;
+}
+
+.categories-menu a:hover {
+    text-decoration: underline;
+}
+
+
 /* banner properties */
 
 .banner {

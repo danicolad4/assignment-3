@@ -1,17 +1,27 @@
 // cart interactivity
 
-// const products = [
-//     {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
-//     {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
-// ];
-// localStorage.setItem("Product", JSON.stringify(products));
+const products = [
+     {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
+     {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
+ ];
+ localStorage.setItem("Product", JSON.stringify(products));
 
-const products = {
-    "asics": {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
-    "babolat": {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
-};
+//const products = {
+//    "rose-shoe": {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
+//    "pure-drive": {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
+//};
 
-// changed from array to keys
+// selecting elements
+const getElement = document.querySelector("tbody tr")
+
+function renderProducts() {
+    products.forEach((product) => {
+        getElement.innerHTML += `
+        
+        `
+        // add the html of the product detail?
+    })
+}
 
 let cart = [];
 
@@ -23,20 +33,28 @@ function getSize() {
     return select.value;
 }
 
-function saveToCart(key) {
-    let cartList = localStorage.getItem("cartList") | []
-    localStorage.setItem("cartList", cartList.push(products.get(key)))
+function getQuan() {
+    let quantity = document.getElementById('chooseQuantity');
+    if (quantity.value == '') {
+        alert('Please select a quantity');
+    }
 }
 
-products.get("asics")
+function addToCart(productId) {
+    let product = {id: productId, size: getSize(), quantity: 1};
+    if (product.size != 'select') {
+        cart.push(product);
+    }
+}
 
-
-//function addToCart(productId) {
-//    let product = {id: productId, size: getSize(), quantity: 1 /* placeholder */};
-//    if (product.size != 'select') {
-//        cart.push(product);
-//    }
+//function saveToCart(key) {
+//    let cartList = localStorage.getItem("cartList") | []
+//    localStorage.setItem("cartList", cartList.push(products.get(key)))
 //}
+
+products.get("rose-shoe")
+products.get("pure-drive")
+
 
 // form validation
 
