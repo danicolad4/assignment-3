@@ -140,6 +140,8 @@ button {
     margin-top: 1em;
 }
 
+/* home page */
+
 .bento-display {
     display: grid;
     grid-template-columns: auto auto;
@@ -222,7 +224,7 @@ figure img {
 
 .stars img{
     padding: 0 1em 2em 0;
-    width: 30px;
+    width: 45px;
 }
 
 .footer {
@@ -276,13 +278,14 @@ hr {
 
 .other-categories {
     width: 100%;
+    margin: 1em;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .other-categories img {
-    margin: 1em;
+    margin: 0 1em 2em 1em;
     border-radius: 2em;
 }
 
@@ -444,7 +447,7 @@ textarea {
 }
 
 form input, select {
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 0.5em;
     border-radius: 0.5em;
     border: 1px solid var(--main-text-color);
     width: 100%;
@@ -530,9 +533,17 @@ form button {
     }
 
     .container {
-        flex-direction: column;
-        margin-left: 1.7em;
+        overflow: auto;
     }
+
+    .review-card {
+        margin: 0 0 1.5em 1.5em;
+    }
+
+    #last-class {
+        margin-right: 1.5em;
+    }
+
   
     .footer-contact {
         display: grid;
@@ -549,6 +560,8 @@ form button {
 
     .other-categories {
         flex-direction: column;
+        margin: 0;
+        padding: 1em;
     } 
 
     .other-categories img {
