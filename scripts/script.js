@@ -107,7 +107,17 @@ function getValidation() {
         return false;
     }
 
-    // need to add date validation
+    let getMonth = document.forms["checkout-form"]["month"].value;
+    if (getMonth == "" || getMonth > 12 || getMonth == 0) {
+        alert("Please enter a valid 'Month'")
+        return false;
+    }
+
+    let getYear = document.forms["checkout-form"]["year"].value;
+    if (getYear == "" || getYear < 2026) {
+        alert("Please enter a valid 'Year'")
+        return false;
+    }
 
     let getCvc = document.forms["checkout-form"]["cvc"].value;
     if (getCvc.length != 3) {

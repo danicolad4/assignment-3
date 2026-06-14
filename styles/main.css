@@ -415,11 +415,11 @@ html {
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 1rem;
     margin: 0 2em 2em 2em;
     padding: 2em;
-    border: 2px solid var(--body-text-color);
+    border: 2px solid var(--main-text-color);
     border-radius: 1em;
     justify-content: center;
     width: 100%;
@@ -446,6 +446,10 @@ form input, select {
 
 #span-two {
     grid-column: 1 / span 2;
+}
+
+#span-three {
+    grid-column: 1 / span 3;
 } 
 
 form button {
@@ -551,6 +555,10 @@ form button {
     }
 
     #span-two {
+        grid-column: auto;
+    }
+
+    #span-three {
         grid-column: auto;
     }
 
