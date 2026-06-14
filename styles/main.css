@@ -3,7 +3,9 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 h1, h2, h3 {
     margin: 1em;
@@ -348,6 +350,7 @@ table {
 table img {
     width: 100%;
     border-radius: 1.5em;
+    padding-left: 1em;
 }
 
 table td {
@@ -355,12 +358,12 @@ table td {
 }
 
 table td:nth-child(2) {
-    width: 150px;
+    width: 200px;
     padding: 2em 2em 0 2em;
 }
 
 table td:nth-child(5) input {
-    width: 60px;
+    width: 100px;
     padding: 1em;
 }
 
@@ -386,15 +389,24 @@ table tbody td {
     border-radius: 1em;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+
 .checkout button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2em;
 }
 
 #promo-code {
-    width: 60%;
+    width: 50%;
     padding: 1em 2em 1em 2em;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 1em;
 }
 
@@ -415,7 +427,7 @@ html {
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2fr);
     gap: 1rem;
     margin: 0 2em 2em 2em;
     padding: 2em;
@@ -551,15 +563,8 @@ form button {
 
     form {
         display: grid;
-        grid-template-columns: 1fr;
-    }
+        width: 85%;
 
-    #span-two {
-        grid-column: auto;
-    }
-
-    #span-three {
-        grid-column: auto;
     }
 
     .overall-payment {
@@ -569,6 +574,5 @@ form button {
 
     .checkout {
         width: 85%;
-        margin: 0;
     }
 }
