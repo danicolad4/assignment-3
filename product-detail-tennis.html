@@ -78,7 +78,12 @@
                     <option value="9">9</option>
                 </select>
                 <span><h2>QTY:</h2></span>
-                <input type="number" id="chooseQuantity" name="quantity">
+                    <div class="quantity-cue">
+                        <button id="decrease">-</button>
+                        <h3 class="quantity">1</h3>
+                        <button id="increase">+</button>
+                    </div>
+                <!-- <input type="number" id="chooseQuantity" name="quantity"> -->
                 
                 <button onclick="addToCart(1)">Add to Cart</button>
             </div>

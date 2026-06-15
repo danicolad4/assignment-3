@@ -74,7 +74,12 @@
                     <option value="One-size">One-size</option>
                 </select>
                 <span><h2>QTY:</h2></span>
-                <input type="number" id="chooseQuantity" name="quantity">
+                    <div class="quantity-cue">
+                        <button id="decrease">-</button>
+                        <h3 class="quantity">1</h3>
+                        <button id="increase">+</button>
+                    </div>
+                <!-- <input type="number" id="chooseQuantity" name="quantity"> -->
                 
                 <button onclick="addToCart(2)">Add to Cart</button>
             </div>

@@ -320,7 +320,7 @@ hr {
 }
 
 .product-details select {
-    margin: 0 1.8em 1.5em 1.8em;
+    margin: 0 1.8em 1.5em 1.5em;
     padding: 5px;
 }
 
@@ -337,6 +337,14 @@ hr {
 
 #selectSize {
     width: 100px;
+}
+
+.product-details .quantity-cue {
+    margin-top: 0;
+}
+
+.product-details .quantity-cue button {
+    margin: 0.5em 0 3em 0;
 }
 
 /* Shopping Cart Page */
@@ -594,6 +602,10 @@ form button {
         display: block;
         width: 100%;
         padding: 0 1.5em 1.5em 1.5em;
+    }
+
+    .product-details .quantity-cue {
+        margin-left: 2em;
     }
 
     form {
