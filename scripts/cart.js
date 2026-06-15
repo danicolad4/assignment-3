@@ -1,4 +1,4 @@
-// cart interactivity
+// required products
 
 const products = [
      {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95, img: "assets/pink_and_white_shoe.jpg"}, 
@@ -30,6 +30,8 @@ function addToCart(productId) {
     }
     updateCart();
 }
+
+// product quantity cues
 
 function minusQuantity(id, size) {
     for (let i = 0; i < cart.length; i++) {
@@ -63,6 +65,8 @@ function removeProduct(productId, size) {
     updateCart();
     displayCart();
 }
+
+// total price added up
 
 function cartTotal() {
     let cartTotal = 0.0;
@@ -130,77 +134,3 @@ function displayCart() {
 }
 
     document.addEventListener("DOMContentLoaded", loadCart());
-
-
-// form validation
-
-function getValidation() {
-    let firstName = document.forms["checkout-form"]["fname"].value;
-    if (firstName == "") {
-        alert("Please fill in your 'First Name'");
-        return false;
-    }
-
-    let lastName = document.forms["checkout-form"]["lname"].value;
-    if (lastName == "") {
-        alert("Please fill in your 'Last Name'");
-        return false;
-    } 
-
-    let phoneNum = document.forms["checkout-form"]["pnumber"].value;
-    if (phoneNum.length != 10) {
-        alert("Please enter a valid 'Phone Number'");
-        return false;
-    }
-
-    let getEmail = document.forms["checkout-form"]["email"].value;
-    if (!getEmail.includes("@") || !getEmail.includes(".")) {
-        alert("Please enter a valid 'Email'");
-        return false;
-    } 
-
-    let getAddress = document.forms["checkout-form"]["address"].value;
-    if (getAddress == "") {
-        alert("Please fill in your 'Address'");
-        return false;
-    } 
-
-    let getState = document.getElementById("state");
-    if (getState.value == "select") {
-        alert("Please select a 'State'");
-        return false;
-    }
-
-    let postalCode = document.forms["checkout-form"]["pcode"].value;
-    if (postalCode.length != 4) {
-        alert("Please enter a valid 'Postal Code'");
-        return false;
-    }
-
-    let cardNum = document.forms["checkout-form"]["cnumber"].value;
-    if (cardNum.length != 16) {
-        alert("Please enter a valid 'Card Number'");
-        return false;
-    }
-
-    let getMonth = document.forms["checkout-form"]["month"].value;
-    if (getMonth == "" || getMonth > 12 || getMonth == 0) {
-        alert("Please enter a valid 'Month'")
-        return false;
-    }
-
-    let getYear = document.forms["checkout-form"]["year"].value;
-    if (getYear == "" || getYear < 26) {
-        alert("Please enter a valid 'Year'")
-        return false;
-    }
-
-    let getCvc = document.forms["checkout-form"]["cvc"].value;
-    if (getCvc.length != 3) {
-        alert("Please enter a valid 'CVC'");
-        return false;
-    }
-
-    clearCart();
-    return true;
-}
