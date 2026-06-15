@@ -9,6 +9,15 @@ const products = [
 
 let cart = [];
 
+function emptyCart() {
+    if (cart.length == "") {
+        alert('Your cart is empty')
+        return false;
+    }
+
+    window.location.href = "/payment-details.html";
+}
+
 function getSize() {
     let select = document.getElementById('selectSize');
     if (select.value == 'select') {
