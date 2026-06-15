@@ -52,29 +52,24 @@
     <h2>Shopping Cart</h2>
         <hr>
         <div class="shopping-cart">
-            <table>
-              
-
-                <tbody>
-                    
-                    <!--print tr product here-->
-                    
-                    <tr>
-                        <td><img src="assets/main_tennis_product.jpg" alt="Asics Gel Dedicate 8  Rose Tennis Shoe"></td>
-                        <td>Asics Gel Dedicate 8  Rose Tennis Shoe</td>
-                        <td>$139.95</td>
-                        <td>7</td>
-                        <td><input type="number" value="1"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="assets/main_bags_product.jpg" alt="Babolat Pure Drive 6 Pack 2025"></td>
-                        <td>Babolat Pure Drive 6 Pack 2025</td>
-                        <td>$299.95</td>
-                        <td>One-size</td>
-                        <td><input type="number" value="1"></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="product-count">
+                <div class="added-product">
+                    <img src="assets/main_tennis_product.jpg" alt="Asics Gel Dedicate 8  Rose Tennis Shoe">
+                    <div class="product-info">
+                        <span><h2>Asics Gel Dedicate 8  Rose Tennis Shoe</h2></span>
+                        <h2>$139.95</h2>
+                        <span><h2>Size: (print)</h2></span>
+                        <div class="quantity-cue">
+                            <button id="decrease">-</button>
+                            <h3 class="quantity">1</h3>
+                            <button id="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="delete-product">
+                        <img src="assets/trash-solid-full.svg" alt="Delete Product">
+                    </div>
+                </div>
+            </div>
         </div>
 
     <hr>
@@ -90,7 +85,7 @@
             
             <div class="double-content">
                 <span><h2>Total</h2></span>
-                <h2>$369.9</h2>
+                <h2 class="total-price">$0</h2>
             </div>
             <div class="flex-display">
                 <a href="payment-details.html"><button>Checkout</button></a>

@@ -6,24 +6,12 @@ const products = [
  ];
  localStorage.setItem("Product", JSON.stringify(products));
 
-//const products = {
-//    "rose-shoe": {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
-//    "pure-drive": {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
-//};
 
 // selecting elements
-const getElement = document.querySelector("tbody tr")
 
-function renderProducts() {
-    products.forEach((product) => {
-        getElement.innerHTML += `
-        
-        `
-        // add the html of the product detail?
-    })
-}
 
-let cart = [];
+
+let cart = localStorage.getItem("cart") | [];
 
 function getSize() {
     let select = document.getElementById('selectSize');

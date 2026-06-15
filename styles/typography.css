@@ -67,3 +67,11 @@ label {
     font-weight: bold;
     color: #EDE2C4;
 }
+
+.product-info > h2 {
+    color: var(--other-elements-color);
+}
+
+.quantity-cue h3 {
+    color: var(--main-text-color);
+}
