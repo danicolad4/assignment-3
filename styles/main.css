@@ -363,21 +363,22 @@ hr {
 
 .added-product {
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     width: 100%;
 }
 
 .added-product img {
-    width: 25%;
+    width: 20%;
     border-radius: 1em;
     object-fit: cover;
     margin-left: 1.5em;
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .product-info {
     display: grid;
+    width: 40%;
 }
 
 .quantity-cue {
@@ -403,7 +404,7 @@ hr {
 }
 
 .delete-product {
-    margin-left: 5em;
+    margin-left: 3em;
 }
 
 .delete-product img {
@@ -633,5 +634,11 @@ form button {
 
     .delete-product {
         margin-left: 0;
+    }
+
+    .added-product img {
+        width: 30%;
+        margin-left: 1.5em;
+        margin-right: 1em;
     }
 }
