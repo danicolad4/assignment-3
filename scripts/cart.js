@@ -15,7 +15,7 @@ function emptyCart() {
         return false;
     }
 
-    window.location.href = "payment-details.html";
+    window.location.href = "assignment-3/payment-details.html";
 }
 
 function getSize() {
