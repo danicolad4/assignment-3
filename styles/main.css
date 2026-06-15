@@ -630,4 +630,8 @@ form button {
     .quantity-cue {
         font-size: small;
     }
+
+    .delete-product {
+        margin-left: 0;
+    }
 }

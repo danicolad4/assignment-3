@@ -1,17 +1,13 @@
 // cart interactivity
 
 const products = [
-     {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95}, 
-     {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95}
+     {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95, img: "assets/main_tennis_product.jpg"}, 
+     {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95, img: "assets/main_bags_product.jpg"}
  ];
- localStorage.setItem("Product", JSON.stringify(products));
 
+// add to cart
 
-// selecting elements
-
-
-
-let cart = localStorage.getItem("cart") | [];
+let cart = [];
 
 function getSize() {
     let select = document.getElementById('selectSize');
@@ -21,27 +17,58 @@ function getSize() {
     return select.value;
 }
 
-function getQuan() {
-    let quantity = document.getElementById('chooseQuantity');
-    if (quantity.value == '') {
-        alert('Please select a quantity');
-    }
-}
-
 function addToCart(productId) {
-    let product = {id: productId, size: getSize(), quantity: getQuan()};
+     
+    let product = {id: productId, size: getSize(), quantity: 1};
     if (product.size != 'select') {
         cart.push(product);
     }
+    updateCart();
 }
 
-//function saveToCart(key) {
-//    let cartList = localStorage.getItem("cartList") | []
-//    localStorage.setItem("cartList", cartList.push(products.get(key)))
-//}
+// saving to local storage
 
-products.get("rose-shoe")
-products.get("pure-drive")
+function updateCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function loadCart() {
+    let currentCart = localStorage.getItem("cart");
+    if (currentCart) {
+        cart = JSON.parse(currentCart);
+    }
+
+    displayCart();
+}
+
+// products shown in cart
+
+function displayCart() {
+    const displayedProductsEl = document.querySelector(".product-count");
+    cart.forEach((product) => {
+        let extraInfo = products.find(({id}) => id == product.id);
+        displayedProductsEl.insertAdjacentHTML("beforeend", `<div class="added-product">
+                    <img src="${extraInfo.img}" alt="${extraInfo.name}">
+                    <div class="product-info">
+                        <span><h2>${extraInfo.name}</h2></span>
+                        <h2>$${extraInfo.price}</h2>
+                        <span><h2>Size: ${product.size}</h2></span>
+                        <div class="quantity-cue">
+                            <button id="decrease">-</button>
+                            <h3 class="quantity">${product.quantity}</h3>
+                            <button id="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="delete-product">
+                        <img src="assets/trash-solid-full.svg" alt="Delete Product">
+                    </div>
+                </div>
+            <hr>
+        `)  
+    });
+}
+
+document.addEventListener("DOMContentLoaded", loadCart());
 
 
 // form validation
