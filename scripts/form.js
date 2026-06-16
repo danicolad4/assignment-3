@@ -1,4 +1,4 @@
-// form validation
+// Form Validation
 
 function getValidation() {
     let firstName = document.forms["checkout-form"]["fname"].value;

@@ -1,11 +1,11 @@
-// required products
+// Required Products
 
 const products = [
      {id: 1, name: "Asics Gel Dedicate 8 Rose Tennis Shoe", price: 139.95, img: "assets/pink_and_white_shoe.jpg"}, 
      {id: 2, name: "Babolat Pure Drive 6 Pack 2025", price: 229.95, img: "assets/blue_backpack.jpg"}
  ];
 
-// add to cart
+// Add to Cart
 
 let cart = [];
 
@@ -40,7 +40,7 @@ function addToCart(productId) {
     updateCart();
 }
 
-// product quantity cues
+// Product Quantity Cues
 
 function minusQuantity(id, size) {
     for (let i = 0; i < cart.length; i++) {
@@ -75,7 +75,7 @@ function removeProduct(productId, size) {
     displayCart();
 }
 
-// total price added up
+// Total Price Added Up
 
 function cartTotal() {
     let cartTotal = 0.0;
@@ -86,7 +86,7 @@ function cartTotal() {
     return cartTotal;
 }
 
-// saving to local storage
+// Saving to Local Storage
 
 function updateCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -101,14 +101,14 @@ function loadCart() {
     displayCart();
 }
 
-// after filling in payment details
+// After Filling in Payment Details
 
 function clearCart() {
     cart = [];
     updateCart();
 }
 
-// products shown in cart
+// Products Shown in Cart
 
 function displayCart() {
     const displayedProductsEl = document.querySelector(".product-count");
@@ -123,9 +123,9 @@ function displayCart() {
                             <h2>$${extraInfo.price}</h2>
                             <span><h2>Size: ${product.size}</h2></span>
                             <div class="quantity-cue">
-                                <button id="decrease" onclick="minusQuantity(${product.id}, ${product.size})">-</button>
+                                <button id="decrease" onclick="minusQuantity(${product.id}, '${product.size}')">-</button>
                                 <h3 class="quantity">${product.quantity}</h3>
-                                <button id="increase" onclick="plusQuantity(${product.id}, ${product.size})">+</button>
+                                <button id="increase" onclick="plusQuantity(${product.id}, '${product.size}')">+</button>
                             </div>
                         </div>
                         <div class="delete-product">

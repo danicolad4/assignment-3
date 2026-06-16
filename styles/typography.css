@@ -7,7 +7,7 @@ h2 {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
-    color: #EDE2C4;
+    color: var(--main-text-color);
 }
 
 h3 {
@@ -18,13 +18,13 @@ h3 {
 
 p {
     font-family: "Instrument Sans", sans-serif;
-    color: white;
+    color: var(--other-elements-color);
 }
 
 .footer-ending h2 {
     font-family: 'Sterion', sans-serif;
     font-style: italic;
-    color: white;
+    color: var(--other-elements-color);
 }
 
 .center-align h2 {
@@ -36,22 +36,22 @@ th {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
-    color: #EDE2C4;
+    color: var(--main-text-color);
 }
 
 td {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
-    color: white;
+    color: var(--other-elements-color);
 }
 
 .double-content > h2 {
-    color: white;
+    color: var(--other-elements-color);
 }
 
 form h3 {
-    color: #EDE2C4;
+    color: var(--main-text-color);
 }
 
 input,
@@ -65,7 +65,7 @@ label {
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
-    color: #EDE2C4;
+    color: var(--main-text-color);
 }
 
 .product-info > h2 {
